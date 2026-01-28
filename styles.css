@@ -78,29 +78,27 @@ body {
    - Style the .bg-sample class: Make the width of 100%, set a minimum height of 80px, add padding 0.75 rem and margin-block 0.75 rem, round the corners using border-radius, set the text color to white, and apply a 135-degree linear gradient background starting from the brand color and ending with a green tone like linear-gradient(135deg, var(--brand), #22c55e).
 */
 
-.color-demo{
-  color:var(--muted);
+
+.color-demo .color-note {
+  color: var(--brand);
   font-weight: bold;
+}
+
+.color-demo .muted {
+  color: var(--muted);
   font-size: 0.95rem;
-  
 }
-.color-note{
-  color:var(--brand);
-  font-weight: bold;
+
+.bg-sample {
+  width: 100%;
+  min-height: 80px;
+  padding: 0.75rem;
+  margin-block: 0.75rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand), #22c55e);
 }
-.muted{
-font-size: 0.95rem;
-color:var(--muted);
-}
-.bg-sample{
-width: 100%;
-min-height: 80px;
-padding: 0.75rem;
-margin:0.75rem;
-background: linear-gradient(135deg, var(--brand), #22c55e);
-color:white;
-border-radius: 15px;
-}
+
 
 /* TODO 4:
    - For the .inline-label class: make it behave like an inline-block element with small padding of 0.25rem and 0.5 rem and a border of width 1 px, type as solid line, and set color of value rgba(0, 0, 0, 0.18).
@@ -121,24 +119,20 @@ border-radius: 15px;
      and apply text-transform: capitalize.
    - For the .copy .intro class: set the font-style to italic and slightly increase the line-height and set the top margin of 0.25 rem.
 */
-.copy{
-  font-size: 0.95rem;
+
+
+.copy .title {
+  font-size: 1.25rem;
   font-weight: 600;
   text-transform: capitalize;
+}
+
+.copy .intro {
   font-style: italic;
-  line-height: 1.2rem;
+  line-height: 1.6;
   margin-top: 0.25rem;
 }
-.title{
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-.intro{
-  font-style: italic;
-  line-height: 1.2rem;
-  margin-top: 0.25rem;
-}
+
 
 
 .container {
